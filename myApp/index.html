@@ -1,0 +1,114 @@
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta name="theme-color" content="#ffffff">
+
+          <title>My Mini Website</title>
+          <link rel="manifest" href="manifest.json">
+          <link rel="stylesheet" href="style.css">
+     </head>
+
+     <body>
+
+     <!-- Navigation -->
+     <nav>
+          <h2>My Website</h2>
+
+          <div class="nav-links">
+               <a href="#home">Home</a>
+               <a href="#about">About</a>
+               <a href="#projects">Projects</a>
+          </div>
+
+          <button id="darkModeBtn">🌙</button>
+     </nav>
+
+
+     <!-- Home -->
+     <section id="home" class="hero">
+
+          <div>
+               <p>Hello! I'm</p>
+
+               <h1>Keith</h1>
+
+               <h2>Future Web Developer</h2>
+
+               <p>
+                    I am currently learning HTML, CSS, and JavaScript
+                    to create websites and applications.
+               </p>
+
+               <button class="main-btn" onclick="showMessage()">
+                    Say Hello
+               </button>
+          </div>
+
+     </section>
+
+
+     <!-- About -->
+     <section id="about">
+
+          <h2>About Me</h2>
+
+          <p>
+               I am a student who is interested in programming,
+               web development, and technology.
+          </p>
+
+     </section>
+
+
+     <!-- Projects -->
+     <section id="projects">
+
+          <h2>My Projects</h2>
+
+          <div class="projects-container">
+
+               <div class="project-card">
+                    <h3>Student System</h3>
+                    <p>
+                         A simple system for managing student information.
+                    </p>
+               </div>
+
+               <div class="project-card">
+                    <h3>Mini Calculator</h3>
+                    <p>
+                         A basic calculator created using JavaScript.
+                    </p>
+               </div>
+
+               <div class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>
+                         My personal website created using HTML and CSS.
+                    </p>
+               </div>
+
+          </div>
+
+     </section>
+
+
+     <!-- Footer -->
+     <footer>
+          <p>© 2026 My Mini Website</p>
+     </footer>
+
+
+     <script src="script.js"></script>
+
+     <script>
+     if ("serviceWorker" in navigator) {
+     navigator.serviceWorker.register("sw.js")
+          .then(() => console.log("Service Worker registered"))
+          .catch((error) => console.error("Service Worker error:", error));
+     }
+     </script>
+     </body>
+     </html>

@@ -1,0 +1,16 @@
+{
+"name": "Experiment website",
+"short_name": "expi-apps",
+"start_url": "/index.html",
+"display": "standalone",
+"background_color": "#1e1e1e",
+"theme_color": "#ffffff",
+"description": "My first web application",
+"icons": [
+          {
+          "src": "favicon.png",
+          "sizes": "192x192",
+          "type": "image/png"
+          }
+     ]
+}
